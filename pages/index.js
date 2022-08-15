@@ -1,17 +1,17 @@
 import Head from 'next/head';
-import { PostCard, Categories, PostWidget } from '../components'
+import { PostCard, Categories, PostWidget, ConnectWallet } from '../components'
 import { getPosts } from '../services'
 import { FeaturedPosts } from '../sections'
-
 
 
 export default function Home({ posts }) {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
-        <title>The Blog Spot</title>
+        <title>The BlogSpot</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <ConnectWallet />
       <FeaturedPosts />
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className="lg:col-span-8 col-span-1">
@@ -28,9 +28,10 @@ export default function Home({ posts }) {
       </div>    
     </div>
   )
+
 }
 
-// for fetching the data using getstatic props 
+// for fetching the data using getStaticProps 
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];
 

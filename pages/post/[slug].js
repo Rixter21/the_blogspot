@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { getPosts, getPostDetails} from '../../services'
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader } from '../../components'
 
-const PostDeatails = ({ post }) => {
+const PostDetail = ({ post }) => {
   const router = useRouter();
 
   if(router.isFallback) {
@@ -31,7 +31,7 @@ const PostDeatails = ({ post }) => {
   )
 }
 
-export default PostDeatails
+export default PostDetail
 
 export async function getStaticProps({ params }) {
   const data = await getPostDetails(params.slug)
