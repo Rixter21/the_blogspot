@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { PostCard, Categories, PostWidget, ConnectWallet } from '../components'
 import { getPosts } from '../services'
 import { FeaturedPosts } from '../sections'
+import { connect } from '../scripts/index.js';
 
 
 export default function Home({ posts }) {
@@ -11,8 +12,12 @@ export default function Home({ posts }) {
         <title>The BlogSpot</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ConnectWallet />
-      <FeaturedPosts />
+      <div>
+        <button id='connectButton' onClick={connect}>
+          Connect Wallet
+        </button>
+      </div>
+      <FeaturedPosts />  
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className="lg:col-span-8 col-span-1">
           {posts.map((post) => (
