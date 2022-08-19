@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import { PostCard, Categories, PostWidget, ConnectWallet } from '../components'
+import { PostCard, Categories, PostWidget, ConnectWallet, Button } from '../components'
 import { getPosts } from '../services'
 import { FeaturedPosts } from '../sections'
-import { connect } from '../scripts/index.js';
+import web3Button from '../components';
 
 
 export default function Home({ posts }) {
@@ -13,9 +13,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <button id='connectButton' onClick={connect}>
-          Connect Wallet
-        </button>
+       <web3Button />
       </div>
       <FeaturedPosts />  
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>

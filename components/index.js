@@ -11,3 +11,4 @@ export { default as FeaturedPostCard } from './FeaturedPostCard';
 export { default as Loader } from './Loader';
 export { default as AdjacentPostCard } from './AdjacentPostcard';
 export { default as ConnectWallet } from './ConnectWallet';
+export { default as web3Button } from './button/web3Button';
