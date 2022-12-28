@@ -1,7 +1,5 @@
-import React from 'react'
-import styles from './web3Button.module.scss';
-import { connect } from '../../scripts/index.js.js';
-
+import React from "react";
+import { connect } from "../../scripts/index.js.js";
 
 const web3Button = () => {
   return (
@@ -9,11 +7,12 @@ const web3Button = () => {
       type="button"
       id="connectButton"
       onClick={connect}
-      className={styles.button}
+      style={{ color: 'white', backgroundColor: 'red' }}
     >
-      Connect Wallet
+    Connect Wallet
     </button>
-  );
-}
 
-export default web3Button
+  );
+};
+
+export default web3Button;
