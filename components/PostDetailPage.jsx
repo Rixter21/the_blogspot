@@ -2,7 +2,7 @@ import React from 'react';
 
 import moment from 'moment';
 
-const PostDetail = ({ post }) => {
+const PostDetailPage = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
 
@@ -80,4 +80,4 @@ const PostDetail = ({ post }) => {
   );
 };
 
-export default PostDetail;
+export default PostDetailPage;
