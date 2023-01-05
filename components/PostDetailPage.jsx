@@ -75,7 +75,6 @@ const PostDetailPage = ({ post }) => {
           })}
         </div>
       </div>
-
     </>
   );
 };
