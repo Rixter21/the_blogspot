@@ -19,7 +19,7 @@ const PostDetail = ({ post }) => {
 
   return (
     <div className="container mx-auto px-10 mb-8">
-      <PostDetailComponent post={post} />
+      <PostDetailPage post={post} />
       <Author author={post.author} />
       <CommentsForm slug={post.slug} />
       <Comments slug={post.slug} />
