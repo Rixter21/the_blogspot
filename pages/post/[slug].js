@@ -10,7 +10,7 @@ import {
   Loader,
 } from "../../components";
 
-const PostDetailPage = ({ post }) => {
+const PostDetail = ({ post }) => {
   const router = useRouter();
 
   if (router.isFallback) {
@@ -27,7 +27,7 @@ const PostDetailPage = ({ post }) => {
   );
 };
 
-export default PostDetailPage;
+export default PostDetail;
 
 export async function getStaticProps({ params }) {
   const data = await getPostDetails(params.slug);
