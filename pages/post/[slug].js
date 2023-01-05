@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import { getPostDetails } from "../../services";
 import {
-  PostDetail as PostDetailComponent,
+  PostDetailPage,
   Author,
   Comments,
   CommentsForm,
