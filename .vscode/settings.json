@@ -1,7 +1,5 @@
 {
-    "cSpell.words": [
-        "GRAPHCMS",
-        "nomiclabs",
-        "tailwindcss"
-    ]
+  "cSpell.words": ["GRAPHCMS", "nomiclabs", "tailwindcss"],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
 }
